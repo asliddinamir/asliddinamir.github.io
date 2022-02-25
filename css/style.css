@@ -647,6 +647,23 @@ section {
   color: #0d0d0d;
 }
 
+.success h2 {
+  color: #aaa;
+  font-size: 2rem;
+}
+
+.success .btn {
+  margin-top: 6rem;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+}
+
+.success .btn:hover {
+  background-color: #fff;
+  color: #1a1a1a;
+  cursor: pointer;
+  letter-spacing: .2rem;
+}
 
 /*-----------------------media queries-------------------*/
 @media (max-width: 1200px) {
