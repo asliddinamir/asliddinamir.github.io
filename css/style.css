@@ -646,6 +646,20 @@ section {
   background: #fff;
   color: #0d0d0d;
 }
+.success h2{
+  color: #aaa;
+  font-size: 2rem;
+}
+.success .btn{
+  margin-top: 6rem;
+  transition: .3s linear;
+}
+
+.success .btn:hover{
+  background-color: #fff;
+  color: #1a1a1a;
+  cursor: pointer;
+}
 
 /*-----------------------media queries-------------------*/
 @media (max-width: 1200px) {
