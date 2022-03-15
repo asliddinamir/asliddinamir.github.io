@@ -221,6 +221,10 @@ section{
                 padding: 3rem 4rem;
                 background: $light-bg;
                 box-shadow: $box-shadow;
+                position: relative;
+
+
+                
 
                 h3{
                     font-size: 5rem;
@@ -234,6 +238,18 @@ section{
                     color: $light-color;
                     margin-top: 0;
                     font-size: 1rem;
+                }
+                .btn{
+                    margin-bottom: 0;
+                    background: none;
+                    color: greenyellow;
+                    position: absolute;
+                    top: 1rem;
+                    left: 13rem;
+
+                    &:hover{
+                        color: white;
+                    }
                 }
             }
         }
@@ -617,6 +633,22 @@ section{
             }
         }
     }
+    .about{
+
+        .row{
+
+          .count-container{
+
+            .box{
+                position: relative;
+
+                .btn{
+                    left: 10rem;
+                }
+            }
+          }
+        } 
+    }
     .home{
         text-align: center;
         
@@ -643,5 +675,21 @@ section{
 @media(max-width:450px){
     html{
         font-size: 50%;
+    }
+    .about{
+
+        .row{
+
+          .count-container{
+
+            .box{
+                position: relative;
+
+                .btn{
+                    left: 10rem;
+                }
+            }
+          }
+        } 
     }
 }
