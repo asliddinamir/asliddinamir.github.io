@@ -254,6 +254,7 @@ section {
   background: #1a1a1a;
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.7);
+  position: relative;
 }
 
 .about .row .count-container .box h3 {
@@ -270,6 +271,19 @@ section {
   color: #aaa;
   margin-top: 0;
   font-size: 1rem;
+}
+
+.about .row .count-container .box .btn {
+  margin-bottom: 0;
+  background: none;
+  color: greenyellow;
+  position: absolute;
+  top: 1rem;
+  left: 13rem;
+}
+
+.about .row .count-container .box .btn:hover {
+  color: white;
 }
 
 .skills .box-container {
@@ -662,7 +676,7 @@ section {
   background-color: #fff;
   color: #1a1a1a;
   cursor: pointer;
-  letter-spacing:   .2rem;
+  letter-spacing: .2rem;
 }
 
 /*-----------------------media queries-------------------*/
@@ -688,6 +702,12 @@ section {
   .navbar a:hover {
     padding-bottom: 2rem;
   }
+  .about .row .count-container .box {
+    position: relative;
+  }
+  .about .row .count-container .box .btn {
+    left: 10rem;
+  }
   .home {
     text-align: center;
   }
@@ -710,6 +730,12 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .about .row .count-container .box {
+    position: relative;
+  }
+  .about .row .count-container .box .btn {
+    left: 10rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
