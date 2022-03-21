@@ -148,11 +148,18 @@ section{
             font-size: 4rem;
             padding-bottom: .5rem;
         }
+        h2{
+            font-size: 3rem;
+            color: yellowgreen;
+            padding: .5rem 0;
+            display: inline;
+        
+        }
         span{
             font-size: 3rem;
             color: $crimson;
             padding: .5rem 0;
-            display: block;
+            display: inline;
         }
         p{
             font-size: 1.5rem;

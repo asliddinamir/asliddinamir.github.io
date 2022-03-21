@@ -160,11 +160,18 @@ section {
   padding-bottom: .5rem;
 }
 
+.home .content h2 {
+  font-size: 3rem;
+  color: yellowgreen;
+  padding: .5rem 0;
+  display: inline;
+}
+
 .home .content span {
   font-size: 3rem;
   color: crimson;
   padding: .5rem 0;
-  display: block;
+  display: inline;
 }
 
 .home .content p {
