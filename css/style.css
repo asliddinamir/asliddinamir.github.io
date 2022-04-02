@@ -668,6 +668,11 @@ section {
           justify-content: center;
 }
 
+.contact .row form .inputBox .focus:focus {
+  border-color: yellow;
+  border: 1px solid yellow;
+}
+
 .contact .row form .inputBox input {
   width: 49%;
 }
@@ -687,6 +692,11 @@ section {
   border-radius: 1rem;
   resize: none;
   height: 25rem;
+}
+
+.contact .row form textarea:focus {
+  border-color: yellow;
+  border: 1px solid yellow;
 }
 
 .contact .row form .btn {

@@ -574,8 +574,16 @@ section{
                 flex-wrap: wrap;
                 justify-content: center;
 
+                .focus:focus{
+                    border-color: yellow;
+                    border: 1px solid yellow;
+               
+                }
+
                 input{
                     width: 49%;
+                    
+                   
                 }
             }
             .inputBox input,textarea{
@@ -586,12 +594,19 @@ section{
                 text-transform: none;
                 margin: .7rem 0;
                 background: $light-bg;
+              
             }
             textarea{
                 width: 100%;
                 border-radius: 1rem;;
                 resize: none;
-                height: 25rem;       
+                height: 25rem;   
+                
+                &:focus{
+                    border-color: yellow;
+                    border: 1px solid yellow;
+               
+                }
             }
             .btn{
                 padding: 1rem 3rem;
