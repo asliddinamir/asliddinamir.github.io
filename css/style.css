@@ -136,17 +136,47 @@ section {
 }
 
 .home .image {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 42rem;
-          flex: 1 1 42rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
+  -webkit-animation: spin 10s infinite linear;
+          animation: spin 10s infinite linear;
+  border: 6px dashed red;
+  border-radius: 50%;
+  overflow: hidden;
 }
 
 .home .image img {
-  height: 50rem;
-  width: 50rem;
-  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-  border: 6px solid red;
+  width: 47rem;
+  height: 47rem;
+  border-radius: 50%;
+  animation: spin 10s infinite reverse linear;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotateZ(360deg);
+            transform: rotateZ(360deg);
+  }
 }
 
 .home .content {
@@ -719,6 +749,11 @@ section {
   .home {
     text-align: center;
   }
+  .home .image {
+    position: relative;
+    left: 16rem;
+    overflow: hidden;
+  }
   .home .image img {
     height: 30rem;
     width: 30rem;
@@ -744,6 +779,32 @@ section {
   }
   .about .row .count-container .box .btn {
     left: 10rem;
+  }
+  .home .image {
+    overflow-x: hidden;
+    position: relative;
+    left: 16%;
+  }
+}
+
+@media (max-width: 375px) {
+  .home .image img {
+    height: 25rem;
+    width: 25rem;
+  }
+}
+
+@media (min-width: 713px) {
+  .home .image {
+    position: relative;
+    left: 0;
+  }
+}
+
+@media (max-width: 280px) {
+  .home .image img {
+    height: 20rem;
+    width: 20rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

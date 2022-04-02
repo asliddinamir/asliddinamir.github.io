@@ -131,16 +131,32 @@ section{
     min-height: calc(100vh - 6.5rem);
 
     .image{
-        flex: 1 1 42rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         text-align: center;
+        animation: spin 10s infinite linear;
+        border: 6px dashed red;
+        border-radius: 50%;
+        overflow: hidden;
+           
+
         img{
-            height: 50rem;
-            width: 50rem;
-            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-            border: 6px solid red;
+            width: 47rem;
+            height: 47rem;
+            border-radius: 50%;
+            animation: spin 10s infinite reverse linear;
+            justify-content: center;
+            align-items: center;
         }
+          
     }
 
+    @keyframes spin {
+        100% {
+            transform: rotateZ(360deg);
+        }
+    }
     .content{
         flex: 1 1 42rem;
 
@@ -623,6 +639,7 @@ section{
     section{
         padding: 3rem 2rem;
     }
+     
 }
 @media(max-width:768px){
     .heading{
@@ -659,7 +676,11 @@ section{
     }
     .home{
         text-align: center;
-        
+        .image{
+            position: relative;
+            left: 16rem;
+            overflow: hidden;
+        }
         .image img{
             height: 30rem;
             width: 30rem;
@@ -700,4 +721,42 @@ section{
           }
         } 
     }
+    .home{
+        .image{
+            overflow-x: hidden;
+            position: relative;
+            left: 16%;
+
+        }
+        
+    }
+}
+
+@media(max-width:375px){
+    .home{
+    .image img{
+        height: 25rem;
+        width: 25rem;
+    }
+}
+}
+
+@media(min-width:713px){
+    .home{
+        .image{
+            position: relative;
+            left: 0;
+
+        }
+        
+    };
+}
+
+@media(max-width:280px){
+    .home{
+    .image img{
+        height: 20rem;
+        width: 20rem;
+    }
+}
 }
