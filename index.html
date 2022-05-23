@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,50 +9,70 @@
     <title>Asliddin</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-    
+
 </head>
+
 <body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader">
+            <p class="text">Asliddin</p>
+            <div class="loading-bar">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
     <!---Navbar Section Starts-->
-<nav class="navbar">
-    <a href="index.html"><i class="fas fa-home"></i><span>home</span></a>
-    <a href="about.html"><i class="fas fa-user"></i><span>about</span></a>
-    <a href="portfolio.html"><i class="fas fa-briefcase"></i><span>portfolio</span></a>
-    <a href="awards.html"><i class="fas fa-award"></i><span>awards</span></a>
-    <a href="contact.html"><i class="fas fa-address-book"></i><span>contact</span></a>
-</nav>
+    <nav class="navbar">
+        <a href="index.html"><i class="fas fa-home"></i><span>home</span></a>
+        <a href="about.html"><i class="fas fa-user"></i><span>about</span></a>
+        <a href="portfolio.html"><i class="fas fa-briefcase"></i><span>portfolio</span></a>
+        <a href="awards.html"><i class="fas fa-award"></i><span>awards</span></a>
+        <a href="contact.html"><i class="fas fa-address-book"></i><span>contact</span></a>
+    </nav>
     <!---Navbar Section Ends-->
 
     <!---Home Section Starts-->
-<section class="home">
-    <div class="image">
-        <img src="images/user.jpeg" alt="">
-    </div>
-    <div class="content">
-        <h3>hi, i am asliddin amirov</h3>
-        <h2>Junior <span class="auto-typed"></span>
-        <p>- 👋 Hi, I am @asliddinamir and I'm Junior Full Stack Developer<br> 
-            - 👀 I am interested in Coding, Playing Football and Chess<br>
-            - 💪 I am skillful in HTML, CSS and Python<br>
-            - 🌱 I am currently learning JavaScrirt through Udemy<br>
-            - 💞️ I am looking to collaborate on Full Stack Development<br>
-            - 📫 You can contact me on Instagram @amirov_.a</p>
-        <a href="about.html" class="btn">about me <i class="fas fa-user"></i></a>    
-    </div>
-</section>
+    <section class="home">
+        <div class="image">
+            <img src="images/user.jpeg" alt="">
+        </div>
+        <div class="content">
+            <h3>hi, i am asliddin amirov</h3>
+            <h2>Junior <span class="auto-typed"></span>
+                <p>- 👋 Hi, I am @asliddinamir and I'm Junior Full Stack Developer<br>
+                    - 👀 I am interested in Coding, Playing Football and Chess<br>
+                    - 💪 I am skillful in HTML, CSS and Python<br>
+                    - 🌱 I am currently learning JavaScrirt through Udemy<br>
+                    - 💞️ I am looking to collaborate on Full Stack Development<br>
+                    - 📫 You can contact me on Instagram @amirov_.a</p>
+                <a href="about.html" class="btn">about me <i class="fas fa-user"></i></a>
+        </div>
+    </section>
     <!---Home Section Ends-->
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    
-    <script>
-         
-      var typed = new Typed('.auto-typed',{
-          strings: ['Full Stack Developer', ' Python Developer', 'Front-End Developer'],
-          typeSpeed: 50,
-          backSpeed: 50,
-          loop: true
 
-      });
+    <script>
+
+        var typed = new Typed('.auto-typed', {
+            strings: ['Full Stack Developer', ' Python Developer', 'Front-End Developer'],
+            typeSpeed: 50,
+            backSpeed: 50,
+            loop: true
+
+        });
 
     </script>
+
+    <script>
+        setTimeout(function () {
+            $('#preloader').fadeToggle();
+        }, 3000);
+    </script>
+
+    <script src="JQuery.js"></script>
 </body>
+
 </html>
