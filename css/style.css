@@ -68,7 +68,7 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #0d0d0d;
-  z-index: 999999;
+  z-index: 10000;
 }
 
 #preloader .loader {
@@ -86,7 +86,7 @@ section {
   width: 100%;
   padding: 20px;
   text-align: center;
-  z-index: 999999;
+  z-index: 10000;
 }
 
 #preloader .loader p.text {
