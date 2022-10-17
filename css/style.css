@@ -292,6 +292,29 @@ section {
   display: inline;
 }
 
+.home .share{
+  margin-right: -6rem;
+}
+
+.home .share a{
+  margin: 1rem;
+  font-size: 2rem;
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: 50%;
+  background: #1a1a1a;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home .share a:hover{
+  background: crimson;
+}
+
 .home .content p {
   font-size: 1.5rem;
   color: #aaa;
@@ -734,6 +757,8 @@ section {
   margin-right: .3rem;
 }
 
+
+
 .contact .row .info-container .share a:hover {
   background: crimson;
 }
@@ -881,6 +906,11 @@ section {
     overflow-x: hidden;
     position: relative;
     left: 16%;
+  }
+  .home .share {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
   }
 }
 
